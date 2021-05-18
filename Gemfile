@@ -37,3 +37,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'mongoid', '~> 7.0.5'
+gem 'bson_ext'
+gem 'devise'
+gem 'jwt'
+gem 'rack-cors'
