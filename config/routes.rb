@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       post :auth, to: 'authentication#create'
       get  '/auth' => 'authentication#fetch'
       
-      get 'post/index'
+      get '/quotes/:tag', to: 'quotes#index',as: :quotes
     end
     namespace :v2 do
       # Things yet to come
