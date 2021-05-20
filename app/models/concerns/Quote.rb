@@ -6,6 +6,8 @@ class Quote
   field :author_link, type: String
   field :tags, type: Array
 
+  validates :quote, :author, :author_link, :tags, presence: true
+
   def self.quote_crawler(tag_search, page)
     link = "http://quotes.toscrape.com/page/#{page}"
     agent = Mechanize.new
