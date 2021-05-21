@@ -7,8 +7,5 @@ Rails.application.routes.draw do
       
       get '/quotes/:tag', to: 'quotes#index',as: :quotes
     end
-    namespace :v2 do
-      # Things yet to come
-    end
   end
 end
